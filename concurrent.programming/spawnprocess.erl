@@ -7,7 +7,7 @@
 %
 start() -> 
 	spawn(?MODULE, say_something, [hello, 3]),
-    spawn(?MODULE, say_something, [goodbye, 3]),
+    spawn(?MODULE, say_something, [goodbye, 3]), <  spawn returns a process identifier
     0.
 
 say_something(What, 0) ->
