@@ -28,6 +28,9 @@ ping(Times, Pong_Pid) ->
     end,
     ping(Times - 1, Pong_Pid).
 
+% erlc messageprocess.erl
+% erl --no-shell -s messageprocess start -s init stop
+
 %Send messages to other process
 %Pid ! message
 
