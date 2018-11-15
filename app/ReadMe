@@ -1,5 +1,10 @@
 $ erlc helloprocess.erl helloworldapp.erl hellosupervisor.erl 
 $ erl
->1 systools:make_scripts("hellorelease",[local])
+>1 systools:make_scripts("hellorelease",[local]).
 Ctrl + c
 $ erl -boot hellorelease
+$ rm *.boot *.script
+$ erl
+>1 systools:make_scripts("hellorelease").
+>2 systools:make_tar("hellorelease").
+$ tar -tvf hellorelease.tar.gz 
