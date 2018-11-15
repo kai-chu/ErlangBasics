@@ -3,6 +3,6 @@
   {vsn, "1.0"},
   {modules, [helloworldapp, hellosupervisor, helloprocess]},
   {applications, [kernel, stdlib, sasl]},
-  {registered, [helloworldapp]},
+  {registered, [helloprocess]},
   {mod, {helloworldapp,[]}}
  ]}.

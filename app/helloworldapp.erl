@@ -5,7 +5,9 @@
 
 start(_Type, _Args) ->
 	io:format("~p~n", [helloworldapp]),
-    hellosupervisor:start_link().
+    {ok, Pid}=hellosupervisor:start_link(),
+    io:format("~p~n", [Pid]),
+    {ok, Pid}.
 
 stop(_State) ->
     ok.

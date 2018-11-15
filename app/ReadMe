@@ -1,0 +1,5 @@
+$ erlc helloprocess.erl helloworldapp.erl hellosupervisor.erl 
+$ erl
+>1 systools:make_scripts("hellorelease",[local])
+Ctrl + c
+$ erl -boot hellorelease
