@@ -4,5 +4,5 @@ otp_release:
   - 18.2.1
 
 install: true
-script: erlc -I ./app *.erl
+script: cd $TRAVIS_BUILD_DIR/ErlangBasics/app && erlc *.erl
 
